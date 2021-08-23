@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Calculadora JavaScript</title>
+</head>
+
+<body>
+  <div class="fundo">
+    <div class="container">
+      <div>
+        <h1 class="titulo">Rômulo Semião</h1>
+      </div>
+      <div class="calculadora">
+        <h2>Calculadora</h2>
+        <p id="resultado" class="caixa"></p>
+        <table>
+          <tr>
+            <td><button class="botao" onclick="clean()">C</button></td>
+            <td><button class="botao" onclick="back()"><</button></td>
+            <td><button class="botao" onclick="insert('/')">/</button></td>
+            <td><button class="botao" onclick="insert('*')">X</button></td>
+          </tr>
+
+          <tr>
+            <td><button class="botao" onclick="insert('7')">7</button></td>
+            <td><button class="botao" onclick="insert('8')">8</button></td>
+            <td><button class="botao" onclick="insert('9')">9</button></td>
+            <td><button class="botao" onclick="insert('-')">-</button></td>
+          </tr>
+
+          <tr>
+            <td><button class="botao" onclick="insert('4')">4</button></td>
+            <td><button class="botao" onclick="insert('5')">5</button></td>
+            <td><button class="botao" onclick="insert('6')">6</button></td>
+            <td><button class="botao" onclick="insert('+')">+</button></td>
+          </tr>
+
+          <tr>
+            <td><button class="botao" onclick="insert('1')">1</button></td>
+            <td><button class="botao" onclick="insert('2')">2</button></td>
+            <td><button class="botao" onclick="insert('3')">3</button></td>
+            <td rowspan="2"><button class="botao botao-igual" onclick="calcular()">=</button></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><button class="botao botao-zero" onclick="insert('0')">0</button></td>
+            <td><button class="botao" onclick="insert('.')">.</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
